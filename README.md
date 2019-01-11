@@ -1,5 +1,5 @@
-# Stock-Specific-LSTM
-This is a basic LSTM application on stock (securities) market.
+# Stock-Price-Specific-LSTM
+This is a basic LSTM application on stock (securities) price.
 
 ## What's LSTM (Long Short-Term Memory)?
 A popular LSTM introcution can be found at http://colah.github.io/posts/2015-08-Understanding-LSTMs/. It said:
