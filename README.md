@@ -55,13 +55,17 @@ In short,
   I use daily return instead of price directly. And I normalize the whole data set instead of windowed data. After my preprocessing, I don't need any normalization. For the daily return is normalized in a normal distribution already.
   
 2. Stock specific post LSTM
+  In order to visualize the prediction, the predicted return is turned into price.
+  
+By the way, I added a lot of comments.
 
-3. More comments
+## Is it practical to use LSTM to make money?
 
+There is a good discussion on this topic:
+https://medium.com/@mikeharrisNY/machine-learning-often-a-complicated-way-of-replicating-simple-forecasting-methods-in-financial-25c38db2f624.
 
-## Is it practical?
-
+I agree that the algo is not so important and feature engineering is the key to success. In short, in order to make a successful mechine learning application on stock market, you should put your attension on your data. You cannot have complete stock market data. You have to balance your time, budget with the data scope, frenquency, delay and accuracy. Besides price data, you may need fundamental data, such as financial statements data.
 
 ## Credit
-Most code is copied from . What I did is as the following:
+Most code is modified from  https://github.com/jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction. So I didn't put my name in the source code.
 
