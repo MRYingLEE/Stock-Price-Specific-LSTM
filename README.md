@@ -53,6 +53,7 @@ As an investement professional and an AI learner, I believe stock specific featu
 So based on the code of https://github.com/jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction, I demoed my ideas.
 
 I still use the original model define:
+
 ![Model Architecture](https://github.com/MRYingLEE/Stock-Price-Specific-LSTM/blob/master/model.png)
 
 
