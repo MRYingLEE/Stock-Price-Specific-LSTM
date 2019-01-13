@@ -33,6 +33,7 @@ LSTM networks are well-suited to classifying, processing and making predictions 
 
 In short, LSTM is suitable to deal with a time series with long term patterns.
 
+
 ## What's the specificity of stock market?
 A lot of people, especially technical analysis supporters, believe (https://en.wikipedia.org/wiki/Technical_analysis#Principles):
 1. Market action discounts everything
@@ -51,16 +52,27 @@ As an investement professional and an AI learner, I believe stock specific featu
 
 So based on the code of https://github.com/jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction, I demoed my ideas.
 
-In short,
+I still use the original model define:
+![Model Architecture](https://github.com/MRYingLEE/Stock-Price-Specific-LSTM/blob/master/model.png)
+
+
 1. Stock specific preprocessing.
   I use daily return instead of price directly. After my preprocessing, I don't need any normalization. For the daily return is normalized in a normal distribution already. You may think I normalized the whole data set instead of windowed data at the beginning. 
+  The original data is visualized as the following:
+  ![Original Data](https://github.com/MRYingLEE/Stock-Price-Specific-LSTM/blob/master/Visual%20Data.png)
   
 2. Stock specific post LSTM.
   In order to visualize the prediction, the predicted return is converted into price.
   
+  The model using window-normalised price data has the following prediction:
+  ![Based on Price Data](https://github.com/MRYingLEE/Stock-Price-Specific-LSTM/blob/master/Visual_Results%20by%20Normalised%20Price.png)
+  The model using daily return data has the following prediction:
+  ![Based on Return Data](https://github.com/MRYingLEE/Stock-Price-Specific-LSTM/blob/master/Visual%20Results%20by%20Return.png)
+  
 By the way, I added a lot of comments.
 
 ## Is it practical to use LSTM to make money?
+The results is better than I expected.
 
 There is a good discussion on this topic:
 https://medium.com/@mikeharrisNY/machine-learning-often-a-complicated-way-of-replicating-simple-forecasting-methods-in-financial-25c38db2f624.
